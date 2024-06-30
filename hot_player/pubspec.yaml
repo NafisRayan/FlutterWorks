@@ -11,6 +11,10 @@ dependencies:
     sdk: flutter
   cached_network_image: any
   pinch_zoom: ^2.0.0
+  flutter_batteries: any
+  battery: any
+  flutter_broadcasts: any
+  video_player: any
 
 dev_dependencies:
   flutter_test:

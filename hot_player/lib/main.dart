@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart'; // Import the package
 
-import 'pages/broadcast_page.dart';
-import 'pages/battery_percentage_page.dart';
-import 'pages/image_page.dart';
-import 'pages/audio_page.dart';
-import 'pages/video_page.dart';
+import 'package:hot_player/pages/broadcast_page.dart';
+import 'package:hot_player/pages/battery_percentage_page.dart';
+import 'package:hot_player/pages/image_page.dart';
+import 'package:hot_player/pages/audio_page.dart';
+import 'package:hot_player/pages/video_page.dart';
+import 'package:hot_player/pages/display_page.dart';
 
 void main() {
   runApp(const MainApp());
@@ -39,7 +40,7 @@ class HomePage extends StatelessWidget {
               ),
               child: CachedNetworkImage(
                 imageUrl:
-                    'https://i.pinimg.com/originals/f6/d7/17/f6d717e74150053faa708fbea77c39f5.jpg',
+                    'https://th.bing.com/th/id/R.51c4fcd0829ded28d70354ed1574e2d9?rik=QPk4Me48%2fJ35AQ&pid=ImgRaw&r=0',
                 fit: BoxFit.cover,
                 placeholder: (context, url) => CircularProgressIndicator(),
                 errorWidget: (context, url, error) => Icon(Icons.error),

@@ -15,6 +15,7 @@ dependencies:
   battery: any
   flutter_broadcasts: any
   video_player: any
+  audioplayers: any
 
 dev_dependencies:
   flutter_test:

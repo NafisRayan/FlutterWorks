@@ -6,7 +6,7 @@ import 'package:hot_player/pages/battery_percentage_page.dart';
 import 'package:hot_player/pages/image_page.dart';
 import 'package:hot_player/pages/audio_page.dart';
 import 'package:hot_player/pages/video_page.dart';
-import 'package:hot_player/pages/display_page.dart';
+// import 'package:hot_player/pages/display_page.dart';
 
 void main() {
   runApp(const MainApp());

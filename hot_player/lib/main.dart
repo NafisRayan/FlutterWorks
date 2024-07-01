@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Halar vai tham'),
+        title: const Text('Hello...'),
       ),
       drawer: Drawer(
         child: ListView(
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
               ),
               child: CachedNetworkImage(
                 imageUrl:
-                    'https://th.bing.com/th/id/R.51c4fcd0829ded28d70354ed1574e2d9?rik=QPk4Me48%2fJ35AQ&pid=ImgRaw&r=0',
+                    'https://th.bing.com/th/id/OIP.zXznPSs1MTlcCp1ORy0dewHaEK?w=289&h=180&c=7&r=0&o=5&pid=1.7',
                 fit: BoxFit.cover,
                 placeholder: (context, url) => CircularProgressIndicator(),
                 errorWidget: (context, url, error) => Icon(Icons.error),
@@ -79,7 +79,11 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      body: Center(child: Text('Halar vai tham')),
+      body: Center(
+          child: Text(
+        'Hello...',
+        style: const TextStyle(fontSize: 32),
+      )),
     );
   }
 

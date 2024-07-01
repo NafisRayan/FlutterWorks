@@ -19,7 +19,7 @@ class ImagePage extends StatelessWidget {
             ),
             PinchZoom(
               child: Image.network(
-                  'https://media.gettyimages.com/id/1694082464/photo/prada-spring-summer-2024-womenswear-fashion-show-arrivals-and-front-row.jpg?b=1&s=594x594&w=0&k=20&c=gWBQrH8RRVr_ZhzjnE-3YoysfKq7BstlMHHtO4XB9P0='),
+                  'https://th.bing.com/th/id/OIF.Xs50BgOp9XP5k14vs2Kr1w?w=194&h=321&c=7&r=0&o=5&pid=1.7'),
               maxScale: 2.5,
               onZoomStart: () {
                 print('Start zooming');

@@ -15,7 +15,10 @@ class DisplayPage extends StatelessWidget {
         title: Text('Display Page'),
       ),
       body: Center(
-        child: Text('Received Message: $message'),
+        child: Text(
+          'Received Message: $message',
+          style: const TextStyle(fontSize: 22),
+        ),
       ),
     );
   }

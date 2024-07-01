@@ -33,12 +33,12 @@ class _VideoPageState extends State<VideoPage> {
   void _togglePlayback() {
     setState(() {
       _isPlaying = !_isPlaying;
-      if (_isPlaying) {
-        _controller.play();
-      } else {
-        _controller.pause();
-      }
     });
+    if (_isPlaying) {
+      _controller.play();
+    } else {
+      _controller.pause();
+    }
   }
 
   void _forward() {
@@ -83,8 +83,8 @@ class _VideoPageState extends State<VideoPage> {
                   onPressed: _rewind,
                 ),
                 IconButton(
-                  icon: Icon(Icons.pause),
-                  onPressed: () => _togglePlayback(),
+                  icon: _isPlaying ? Icon(Icons.pause) : Icon(Icons.play_arrow),
+                  onPressed: _togglePlayback,
                 ),
                 IconButton(
                   icon: Icon(Icons.fast_forward),

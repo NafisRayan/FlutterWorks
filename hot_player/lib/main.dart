@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Hello...'),
+        title: const Text('Hot Player'),
       ),
       drawer: Drawer(
         child: ListView(
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
           child: Text(
-        'Hello...',
+        'Pretty Hot Stuff',
         style: const TextStyle(fontSize: 32),
       )),
     );

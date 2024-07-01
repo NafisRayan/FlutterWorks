@@ -18,7 +18,7 @@ class _AudioPageState extends State<AudioPage> {
   void initState() {
     super.initState();
     _audioPlayer = AudioPlayer();
-    _audioPlayer.setSourceUrl('2.mp3');
+    _audioPlayer.setSourceUrl('assets/2.mp3');
     _audioPlayer.onDurationChanged.listen((duration) {
       setState(() {
         _duration = duration;

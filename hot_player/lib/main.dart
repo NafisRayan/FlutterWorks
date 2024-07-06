@@ -6,6 +6,7 @@ import 'package:hot_player/pages/battery_percentage_page.dart';
 import 'package:hot_player/pages/image_page.dart';
 import 'package:hot_player/pages/audio_page.dart';
 import 'package:hot_player/pages/video_page.dart';
+import 'package:hot_player/pages/broadcast_home_page.dart';
 // import 'package:hot_player/pages/display_page.dart';
 
 void main() {
@@ -46,18 +47,25 @@ class HomePage extends StatelessWidget {
                 errorWidget: (context, url, error) => Icon(Icons.error),
               ),
             ),
+            // Inside the Drawer widget in main.dart
             ListTile(
-              title: Text('Broadcast'),
+              title: Text('Broadcast Home'),
               onTap: () {
-                _navigateToPage(context, BroadcastPage());
+                _navigateToPage(context, BroadcastHomePage());
               },
             ),
-            ListTile(
-              title: Text('Battery Percentage'),
-              onTap: () {
-                _navigateToPage(context, BatteryPercentagePage());
-              },
-            ),
+            // ListTile(
+            //   title: Text('Broadcast'),
+            //   onTap: () {
+            //     _navigateToPage(context, BroadcastPage());
+            //   },
+            // ),
+            // ListTile(
+            //   title: Text('Battery Percentage'),
+            //   onTap: () {
+            //     _navigateToPage(context, BatteryPercentagePage());
+            //   },
+            // ),
             ListTile(
               title: Text('Image'),
               onTap: () {
